@@ -1,6 +1,6 @@
 # Gnucash to Ledger
 
-Convert Gnucash files to ledger file format. Supports arbitrary decimal places.
+Convert Gnucash files to ledger file format. Supports arbitrary decimal places. Can convert compressed and uncompressed files.
 
 ## Install requirements
 
