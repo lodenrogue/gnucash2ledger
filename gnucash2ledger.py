@@ -205,7 +205,7 @@ class Transaction:
             description=self.description,
             splits=splits)
 
-def unzip_file(file_name):
+def read_file(file_name):
     try:
         with gzip.open(file_name, 'rt') as f:
             return f.read()
@@ -216,9 +216,9 @@ def unzip_file(file_name):
 
 def convert2Ledger(inputFile):
     """Reads a gnucash file and converts it to a ledger file."""
-    unzipped_file = unzip_file(inputFile)
+    file = read_file(inputFile)
 
-    e = xml.etree.ElementTree.fromstring(unzipped_file)
+    e = xml.etree.ElementTree.fromstring(file)
     b = e.find('gnc:book', nss)
 
     # Find all commodities
