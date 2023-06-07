@@ -15,3 +15,5 @@ If a file already exists with the same name as output file nothing is written.
 ```
 python gnucash2ledger.py gnucash_file.gnucash output
 ```
+
+Original code source found here: https://gist.github.com/nonducor/ddc97e787810d52d067206a592a35ea7/
