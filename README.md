@@ -48,5 +48,7 @@ chmod +x gnucash2ledger.py
 
 You can now add it to your PATH so its usable anywhere
 
+---
+
 
 Original code source found here: https://gist.github.com/nonducor/ddc97e787810d52d067206a592a35ea7/
