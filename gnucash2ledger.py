@@ -206,8 +206,12 @@ class Transaction:
             splits=splits)
 
 def unzip_file(file_name):
-    with gzip.open(file_name, 'rt') as f:
-        return f.read()
+    try:
+        with gzip.open(file_name, 'rt') as f:
+            return f.read()
+    except gzip.BadGzipFile:
+        with open(file_name, 'r') as f:
+            return f.read()
 
 
 def convert2Ledger(inputFile):
