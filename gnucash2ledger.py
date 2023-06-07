@@ -253,7 +253,7 @@ def convert2Ledger(inputFile):
 
 if __name__ == '__main__':
     if len(sys.argv) not in (2, 3):
-        print('Usage: gcash2ledger.py inputXMLFile [outputLedgedFile]\n')
+        print('Usage: gcash2ledger.py inputXMLFile [outputLedgerFile]\n')
         print('If output is not provided, output to stdout')
         print('If output exists, it will not be overwritten.')
         exit(1)
