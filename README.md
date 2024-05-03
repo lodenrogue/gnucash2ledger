@@ -19,7 +19,7 @@ cd gnucash-to-ledger
 Copy your gnucash file to the current directory
 
 ```
-cp myfile.gnucash .
+cp path/to/myfile.gnucash .
 ```
 
 Install python requirements
